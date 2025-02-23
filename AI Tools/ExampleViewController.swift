@@ -148,7 +148,6 @@ final class ExampleViewController: UIViewController {
     /// Shows the writing tools for the text view.
     @objc private func showWritingToolsAction() {
         textView.becomeFirstResponder()
-        textView.scrollsToTop = true
         textView.showWritingTools(textView)
     }
 }

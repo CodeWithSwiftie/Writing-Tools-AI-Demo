@@ -15,9 +15,6 @@ This project demonstrates the usage of the new `showWritingTools(_:)` API that p
 ## ✨ Key Features
 
 - Native Apple Writing Tools AI integration
-- Modern UI implementation with gradient animations
-- Light and dark mode support
-- Proper AI tools lifecycle handling
 - Delegate pattern demonstration and event handling
 
 ## 🛠 Requirements
@@ -32,7 +29,7 @@ This project demonstrates the usage of the new `showWritingTools(_:)` API that p
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/ios-writing-tools-demo.git
+git clone https://github.com/CodeWithSwiftie/Writing-Tools-AI-Demo.git
 ```
 
 2. Open `AI Tools.xcodeproj` in Xcode
@@ -45,43 +42,15 @@ git clone https://github.com/yourusername/ios-writing-tools-demo.git
 Main controller demonstrating Writing Tools integration:
 
 ```swift
-@objc private func showWritingToolsAction() {
-    textView.becomeFirstResponder()
-    textView.scrollsToTop = true
-    textView.showWritingTools(textView)
-}
+textView.becomeFirstResponder()
+textView.showWritingTools(textView)
 ```
-
-### GradientButton
-Custom button with gradient background and animations:
-- Smooth touch animations
-- Configurable gradient background
-- System colors support
-
-## 🔍 Implementation Patterns
-
-- **Delegate Pattern**: For Writing Tools events handling
-- **Target-Action**: For user interaction handling
-- **Factory Methods**: For UI components creation
-- **Extension-based Organization**: For code structuring
 
 ## 📝 Implementation Notes
 
 - API is only available on iOS 18.2 and above
 - Requires active firstResponder for text view
 - Supports both plain text and attributed text
-
-## 🤝 Contributing
-
-Contributions are welcome! Here's how:
-
-1. Fork the repository
-2. Create your feature branch
-3. Submit a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## ✉️ Contact
 
